@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <i class="text-lg-left">Usuário Logado: @User.Identity.Name</i>
+    <br />
+
+    <h1 class="display-4">Controlando os Acessos</h1>
+
+    <br />
+    <br />
+
+    <div class="text-left">
+        <p><a class="p-3 mb-2 bg-primary text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Liberado para Todos</a></p>
+        <br />
+        <p><a class="p-3 mb-2 bg-primary text-white" asp-area="" asp-controller="Home" asp-action="Roles_Administrador">Liberado para Roles = Administrador </a></p>
+        <br />
+        <p><a class="p-3 mb-2 bg-primary text-white" asp-area="" asp-controller="Home" asp-action="Roles_Gerente">Liberado para Roles = Gerente </a></p>
+        <br />
+        <p><a class="p-3 mb-2 bg-primary text-white" asp-area="" asp-controller="Home" asp-action="Roles_Supervisor">Liberado para Roles = Supervisor </a></p>
+        <br />
+        <p><a class="p-3 mb-2 bg-primary text-white" asp-area="" asp-controller="Home" asp-action="Roles_Usuario">Liberado para Roles = Usuario </a></p>
+        <br />
+        <br />
+        <br />
+        <p><a class="p-3 mb-2 bg-primary text-white" asp-area="" asp-controller="Home" asp-action="Policy_Administrador">Liberado para Policy = Administrador </a></p>
+    </div>
+
+
+
+
+</div>
